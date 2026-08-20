@@ -1,0 +1,25 @@
+# MLB Pitcher Outcome Model
+# Developed on Python 3.13. Versions are lower bounds matching the
+# environment the models were trained in.
+
+# ── Core ─────────────────────────────────────────────────────────────────────
+pandas>=2.2.3
+numpy>=2.1.3
+scipy>=1.15.3
+
+# ── Modeling ─────────────────────────────────────────────────────────────────
+scikit-learn>=1.6.1
+xgboost>=3.2.0
+lightgbm>=4.6.0
+joblib>=1.4.2
+statsmodels>=0.14.6
+
+# ── Data collection ──────────────────────────────────────────────────────────
+pybaseball>=2.2.7      # Statcast / Baseball Savant
+requests>=2.32.0       # MLB Stats API, Open-Meteo
+tqdm>=4.67.1
+
+# ── Plots & diagnostics ──────────────────────────────────────────────────────
+matplotlib>=3.10.0
+seaborn>=0.13.2
+shap>=0.51.0           # optional: SHAP analysis in 03_train_model.py
